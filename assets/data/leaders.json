@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"image": "/membership/assets/img/nhat_tran.png",
+				"image": "assets/img/nhat_tran.png",
 				"name": "Nhat Tran",
 				"role": "User Manager & Founder",
 				"experience": "5 years",
@@ -47,7 +47,7 @@
 		"description": "Emerging leaders with great potential.",
 		"list": [
 			{
-				"image": "/membership/assets/img/touliver_hoang.jpg",
+				"image": "assets/img/touliver_hoang.jpg",
 				"name": "Touliver Nguyen",
 				"role": "Software Engineer",
 				"experience": "4 years",
@@ -103,6 +103,18 @@
 				"role": "Software Engineer",
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			},
+			{
+				"image": "assets/img/lunas_phung.jpg",
+				"name": "Lunas Phung",
+				"role": "UI/UX Designer",
+				"experience": "1 year",
+				"bio": "User experience design.",
 				"social": {
 					"linkedin": "",
 					"github": "",
