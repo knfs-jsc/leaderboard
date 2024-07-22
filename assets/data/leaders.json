@@ -1,0 +1,114 @@
+{
+	"Diamond": {
+		"description": "Top-level leaders with exceptional skills.",
+		"list": [
+			{
+				"image": "https://media.licdn.com/dms/image/D5603AQFqDeuXYk30bg/profile-displayphoto-shrink_800_800/0/1681934644458?e=1727308800&v=beta&t=kd2qi8_OtT3gnuMqnDKlT622o3tcZz0oEYex6UvOUnM",
+				"name": "Kent Phung",
+				"role": "Founder",
+				"experience": "9 years",
+				"bio": "Research product strategy orientation, search for customers.",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/kent-phung-9a5400220/",
+					"github": "https://github.com/khapu2906",
+					"facebook": "https://www.facebook.com/d.kha.pu"
+				}
+			}
+		]
+	},
+	"Gold": {
+		"description": "Experienced leaders with a wealth of knowledge.",
+		"list": [
+			{
+				"image": "https://media.licdn.com/dms/image/C5603AQE2KTGRlUEzsw/profile-displayphoto-shrink_800_800/0/1601018123727?e=1727308800&v=beta&t=5O8nteO5tBn64H4jQUbYVpUZc2TrxBk-d_N6rJuN_hU",
+				"name": "Cam Nguyen",
+				"role": "Technical Manager & Founder",
+				"experience": "10 years",
+				"bio": "Scientific research, new technology, technology orientation, team training",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/nguy%E1%BB%85n-h%E1%BB%AFu-c%E1%BA%A7m-9a622654/",
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com/gunnyjwc"
+				}
+			},
+			{
+				"image": "/assets/img/nhat_tran.png",
+				"name": "Nhat Tran",
+				"role": "User Manager & Founder",
+				"experience": "5 years",
+				"bio": "Research psychological behavior and user experience.",
+				"social": {
+					"facebook": "https://www.facebook.com/nhinho.nhat.5"
+				}
+			}
+		]
+	},
+	"Silver": {
+		"description": "Emerging leaders with great potential.",
+		"list": [
+			{
+				"image": "/assets/img/touliver_hoang.jpg",
+				"name": "Touliver Nguyen",
+				"role": "Software Engineer",
+				"experience": "4 years",
+				"bio": "Participate in developing customer projects, team products, and team leaders.",
+				"social": {
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com/nguyenhoang.developer"
+				}
+			},
+			{
+				"image": "",
+				"name": "Andy Nguyen",
+				"role": "Software Engineer",
+				"experience": "3 years",
+				"bio": "Participate in developing customer projects, team products, and team leaders.",
+				"social": {
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
+				}
+			}
+		]
+	},
+	"Copper": {
+		"description": "Emerging leaders with great potential.",
+		"list": [
+			{
+				"image": "",
+				"name": "Dylan Ngo",
+				"role": "Software Engineer",
+				"experience": "2 years",
+				"bio": "Participate in developing community building applications.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			},
+			{
+				"image": "",
+				"name": "Duke Nguyen",
+				"role": "Software Engineer",
+				"experience": "2 years",
+				"bio": "Participate in developing community building applications.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			},
+			{
+				"image": "",
+				"name": "Hoang Nguyen",
+				"role": "Software Engineer",
+				"experience": "1 year",
+				"bio": "Participate in developing community building applications.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,356 @@
+#about h1 {
+	color: #f9f9f9;
+}
+
+#about {
+	text-align: center;
+	background-color: #f9f9f9;
+}
+
+.lead {
+	color: #f9f9f9;
+}
+
+#slider {
+	background-color: #f9f9f9;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 28em;
+	padding-top: 8em;
+	transition: background-image 0.3s ease-in-out;
+	position: relative;
+}
+
+#slider::before {
+	background-color: #f9f9f9;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.12);
+}
+
+#slider .content {
+	position: relative;
+	z-index: 1;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+}
+
+.level-container {
+	position: relative;
+}
+
+.level-title {
+	color: #013C4D;
+}
+
+.level-diamond {
+	position: relative;
+	background: linear-gradient(45deg, rgba(185, 242, 255, 0.5), rgba(185, 242, 255, 0.1));
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(185, 242, 255, 0.6);
+	animation: bling-bling 2s infinite;
+	transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+	z-index: 1;
+	border: 0px !important;
+}
+
+/* Hiệu ứng sao rơi xung quanh thẻ diamond */
+.stars-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	overflow: hidden;
+}
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.8);
+	width: 6px;
+	height: 6px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	animation: star-fall 2s infinite linear;
+}
+
+.star:nth-child(1) {
+	top: 10%;
+	left: 10%;
+	animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+	top: 30%;
+	left: 20%;
+	animation-delay: 0.5s;
+}
+
+.star:nth-child(3) {
+	top: 50%;
+	left: 30%;
+	animation-delay: 1s;
+}
+
+.star:nth-child(4) {
+	top: 70%;
+	left: 40%;
+	animation-delay: 1.5s;
+}
+
+.star:nth-child(5) {
+	top: 20%;
+	left: 60%;
+	animation-delay: 2s;
+}
+
+.star:nth-child(6) {
+	top: 40%;
+	left: 70%;
+	animation-delay: 2.5s;
+}
+
+.star:nth-child(7) {
+	top: 60%;
+	left: 80%;
+	animation-delay: 3s;
+}
+
+@keyframes star-fall {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+}
+
+/* Hiệu ứng ánh sáng lấp lánh */
+.level-diamond::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 50%);
+	opacity: 0.7;
+	pointer-events: none;
+	z-index: -1;
+	transform: rotate(-30deg);
+	animation: shimmer 2s infinite;
+}
+
+/* Hiệu ứng lấp lánh khi hover */
+.level-diamond:hover {
+	animation: bling-bling 2s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+@keyframes bling-bling {
+	0% {
+		box-shadow: 0 0 20px rgba(185, 242, 255, 0.6), 0 0 40px rgba(185, 242, 255, 0.4), 0 0 60px rgba(185, 242, 255, 0.2);
+		transform: scale(1);
+	}
+
+	50% {
+		box-shadow: 0 0 30px rgba(185, 242, 255, 0.8), 0 0 60px rgba(185, 242, 255, 0.6), 0 0 90px rgba(185, 242, 255, 0.4);
+		transform: scale(1.05);
+	}
+
+	100% {
+		box-shadow: 0 0 20px rgba(185, 242, 255, 0.6), 0 0 40px rgba(185, 242, 255, 0.4), 0 0 60px rgba(185, 242, 255, 0.2);
+		transform: scale(1);
+	}
+}
+
+/* Hiệu ứng cho các thẻ khác */
+.level-gold {
+	background: linear-gradient(145deg, #ffd900, #fff5e6);
+	animation: shimmer 2s infinite alternate;
+	transition: background 1s ease-in-out;
+}
+
+.level-gold:hover {
+	box-shadow: 0 0 10px #ffd900, 0 0 20px rgb(234 230 230 / 70%), 0 0 30px rgb(236 234 234 / 70%) !important;
+}
+
+.level-silver {
+	background: linear-gradient(145deg, #c1c1c1, #d3d3d3, #ffffff) !important;
+	background-size: 200% 200%;
+	animation: shimmer 2s infinite alternate;
+	transition: background 1s ease-in-out;
+}
+
+.level-copper {
+	background: linear-gradient(145deg, #764517, #976536, #ba9b7e, #ffffff) !important;
+}
+
+/* Cấu hình cho leadership-card */
+.leadership-container {
+	margin-bottom: 30px;
+}
+
+.leadership-card {
+	border: 0px solid #ddd !important;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	min-width: 250px;
+	min-height: 350px;
+	margin: 10px;
+}
+
+.leadership-card img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	background-color: #f0f0f0;
+}
+
+.card-body {
+	padding: 15px;
+}
+
+.card-title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #013C4D;
+}
+
+.card-subtitle {
+	font-size: 1rem;
+	color: #666;
+}
+
+.card-text {
+	font-size: 0.875rem;
+	color: #013C4D;
+}
+
+.card-links a {
+	margin-right: 10px;
+	color: #007bff;
+	text-decoration: none;
+}
+
+.card-links a:hover {
+	text-decoration: underline;
+}
+
+.card-img-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f0f0f0;
+	height: 200px;
+	font-size: 1.5rem;
+	color: #ccc;
+}
+
+.alert-text {
+	color: #b9b9b9 !important;
+}
+
+.tooltip-inner {
+	background-color: #013C4D;
+	color: #fff;
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+	border-top-color: #013C4D;
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #013C4D;
+}
+
+.tooltip.bs-tooltip-left .arrow::before {
+	border-left-color: #013C4D;
+}
+
+.tooltip.bs-tooltip-right .arrow::before {
+	border-right-color: #013C4D;
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+	.leadership-card {
+		flex: 0 0 24%;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.leadership-card {
+		flex: 0 0 30%;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.leadership-card {
+		flex: 0 0 45%;
+	}
+}
+
+@media (max-width: 767px) {
+	.leadership-card {
+		flex: 0 0 100%;
+	}
+
+	.card-body {
+		padding: 10px;
+	}
+
+	.card-title {
+		font-size: 1.1rem;
+	}
+
+	.card-subtitle,
+	.card-text {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.leadership-card {
+		min-height: 200px;
+	}
+
+	.card-body {
+		padding: 8px;
+	}
+
+	.card-title {
+		font-size: 1rem;
+	}
+
+	.card-subtitle,
+	.card-text {
+		font-size: 0.8rem;
+	}
+}
