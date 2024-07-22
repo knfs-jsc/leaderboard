@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"image": "/assets/img/nhat_tran.png",
+				"image": "/membership/assets/img/nhat_tran.png",
 				"name": "Nhat Tran",
 				"role": "User Manager & Founder",
 				"experience": "5 years",
@@ -47,7 +47,7 @@
 		"description": "Emerging leaders with great potential.",
 		"list": [
 			{
-				"image": "/assets/img/touliver_hoang.jpg",
+				"image": "/membership/assets/img/touliver_hoang.jpg",
 				"name": "Touliver Nguyen",
 				"role": "Software Engineer",
 				"experience": "4 years",

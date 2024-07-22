@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	async function fetchLeaders() {
 		try {
-			const response = await fetch('/assets/data/leaders.json'); // Thay đổi đường dẫn nếu cần
+			const response = await fetch('/membership/assets/data/leaders.json'); // Thay đổi đường dẫn nếu cần
 			const data = await response.json();
 			return data;
 		} catch (error) {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 
 				card.innerHTML = `
-                    <img src="${leader.image || '/assets/img/default.png'}" class="card-img-top" alt="${leader.name}">
+                    <img src="${leader.image || '/membership//assets/img/default.png'}" class="card-img-top" alt="${leader.name}">
                     <div class="card-body">
                         <h5 class="card-title">${leader.name}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">${leader.role}</h6>
