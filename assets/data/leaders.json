@@ -58,7 +58,7 @@
 				}
 			},
 			{
-				"image": "",
+				"image": "assets/img/andy_nguyen.png",
 				"name": "Andy Nguyen",
 				"role": "Software Engineer",
 				"experience": "3 years",
@@ -74,7 +74,7 @@
 		"description": "Emerging leaders with great potential.",
 		"list": [
 			{
-				"image": "",
+				"image": "assets/img/dylan_ngo.png",
 				"name": "Dylan Ngo",
 				"role": "Software Engineer",
 				"experience": "2 years",
@@ -86,7 +86,7 @@
 				}
 			},
 			{
-				"image": "",
+				"image": "assets/img/duke_nguyen.png",
 				"name": "Duke Nguyen",
 				"role": "Software Engineer",
 				"experience": "2 years",
