@@ -1,9 +1,9 @@
 {
-	"Diamond": {
-		"description": "Top-level leaders with exceptional skills.",
+	"Infinity": {
+		"description": "Indie Hackers, which handles itself as an independent software company",
 		"list": [
 			{
-				"image": "https://media.licdn.com/dms/image/D5603AQFqDeuXYk30bg/profile-displayphoto-shrink_800_800/0/1681934644458?e=1727308800&v=beta&t=kd2qi8_OtT3gnuMqnDKlT622o3tcZz0oEYex6UvOUnM",
+				"image": "assets/img/kent_phung.png",
 				"name": "Kent Phung",
 				"role": "Founder",
 				"experience": "9 years",
@@ -16,13 +16,30 @@
 			}
 		]
 	},
+	"Diamond": {
+		"description": "Have good professional management and operating capacity, can work in or outside the technology industry but have good insurance and good use of technology, oriented towards profitable development for the organization.",
+		"list": [
+			{
+				"image": "",
+				"name": "Mr X",
+				"role": "Marketing Manager & Co - Founder",
+				"experience": "6 years",
+				"bio": "Analyze, research and evaluate the market, come up with beneficial options to choose, what products to offer, and what media approaches to take.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			}
+		]
+	},
 	"Gold": {
-		"description": "Experienced leaders with a wealth of knowledge.",
+		"description": "Excellent in expertise, along with understanding of other fields.",
 		"list": [
 			{
 				"image": "https://media.licdn.com/dms/image/C5603AQE2KTGRlUEzsw/profile-displayphoto-shrink_800_800/0/1601018123727?e=1727308800&v=beta&t=5O8nteO5tBn64H4jQUbYVpUZc2TrxBk-d_N6rJuN_hU",
 				"name": "Cam Nguyen",
-				"role": "Technical Manager & Founder",
+				"role": "Technical Manager & Co - Founder",
 				"experience": "10 years",
 				"bio": "Scientific research, new technology, technology orientation, team training",
 				"social": {
@@ -34,7 +51,7 @@
 			{
 				"image": "assets/img/nhat_tran.png",
 				"name": "Nhat Tran",
-				"role": "User Manager & Founder",
+				"role": "User Manager & Co - Founder",
 				"experience": "5 years",
 				"bio": "Research psychological behavior and user experience.",
 				"social": {
@@ -44,14 +61,14 @@
 		]
 	},
 	"Silver": {
-		"description": "Emerging leaders with great potential.",
+		"description": "Have good professional knowledge, improve expertise and leadership ability.",
 		"list": [
 			{
 				"image": "assets/img/touliver_hoang.jpg",
 				"name": "Touliver Nguyen",
 				"role": "Software Engineer",
 				"experience": "4 years",
-				"bio": "Participate in developing customer projects, team products, and team leaders.",
+				"bio": "Participate in developing customer projects, team products, and team leader.",
 				"social": {
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com/nguyenhoang.developer"
@@ -62,7 +79,7 @@
 				"name": "Andy Nguyen",
 				"role": "Software Engineer",
 				"experience": "3 years",
-				"bio": "Participate in developing customer projects, team products, and team leaders.",
+				"bio": "Participate in developing customer projects, team products",
 				"social": {
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com"
@@ -71,7 +88,7 @@
 		]
 	},
 	"Copper": {
-		"description": "Emerging leaders with great potential.",
+		"description": "don't have much experience, but I'm constantly learning to improve my ability to transfer subjects.",
 		"list": [
 			{
 				"image": "assets/img/dylan_ngo.png",
@@ -88,7 +105,7 @@
 			{
 				"image": "assets/img/duke_nguyen.png",
 				"name": "Duke Nguyen",
-				"role": "Software Engineer",
+				"role": "Data Engineer",
 				"experience": "2 years",
 				"bio": "Participate in developing community building applications.",
 				"social": {
@@ -100,7 +117,19 @@
 			{
 				"image": "",
 				"name": "Hoang Nguyen",
-				"role": "Software Engineer",
+				"role": "Software & Platform Engineer",
+				"experience": "1 year",
+				"bio": "Participate in developing community building applications.",
+				"social": {
+					"linkedin": "",
+					"github": "",
+					"facebook": ""
+				}
+			},
+			{
+				"image": "",
+				"name": "Dat Pham",
+				"role": "Software & Platform Engineer",
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
 				"social": {

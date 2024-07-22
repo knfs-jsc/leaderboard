@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	async function fetchLeaders() {
 		try {
-			const response = await fetch('assets/data/leaders.json'); // Thay đổi đường dẫn nếu cần
+			const response = await fetch('assets/data/leaders.json');
 			const data = await response.json();
 			return data;
 		} catch (error) {
@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			const levelTitle = document.createElement('h2');
 			levelTitle.className = 'level-title';
 			levelTitle.textContent = level;
+			levelTitle.setAttribute('data-bs-toggle', 'tooltip');
+			levelTitle.setAttribute('title', levels[level]['description']);
 			levelContainer.appendChild(levelTitle);
 
 			const cardsContainer = document.createElement('div');
@@ -52,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			leaders.forEach(leader => {
 				const card = document.createElement('div');
 				switch (level) {
+					case 'Infinity':
+						card.className = 'leadership-card level-infinity';
+						break;
 					case 'Diamond':
 						card.className = 'leadership-card level-diamond';
 						break;

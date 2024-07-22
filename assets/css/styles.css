@@ -49,6 +49,70 @@
 	color: #013C4D;
 }
 
+@keyframes rainbow {
+	0% {
+		background-color: red;
+	}
+	14% {
+		background-color: orange;
+	}
+	28% {
+		background-color: yellow;
+	}
+	42% {
+		background-color: green;
+	}
+	57% {
+		background-color: blue;
+	}
+	71% {
+		background-color: indigo;
+	}
+	85% {
+		background-color: violet;
+	}
+	100% {
+		background-color: red;
+	}
+}
+
+@keyframes bling {
+	0% {
+		box-shadow: 0 0 20px rgba(255, 185, 185, 1), 
+			0 0 40px rgba(255, 234, 185, 0.8), 
+			0 0 60px rgba(202, 255, 185, 0.6),
+			0 0 80px rgba(185, 255, 241, 0.4),
+			0 0 100px rgba(185, 201, 255, 0.2);
+		transform: scale(1);
+	}
+
+	50% {
+		box-shadow: 0 0 30px rgba(255, 185, 185, 1), 
+			0 0 60px rgba(255, 234, 185, 0.8), 
+			0 0 900px rgba(202, 255, 185, 0.6),
+			0 0 120px rgba(185, 255, 241, 0.4),
+			0 0 150px rgba(185, 201, 255, 0.2);
+		transform: scale(1.05);
+	}
+
+	100% {
+		box-shadow: 0 0 20px rgba(255, 185, 185, 1), 
+			0 0 40px rgba(255, 234, 185, 0.8), 
+			0 0 60px rgba(202, 255, 185, 0.6),
+			0 0 80px rgba(185, 255, 241, 0.4),
+			0 0 100px rgba(185, 201, 255, 0.2);
+		transform: scale(1);
+	}
+}
+
+.level-infinity {
+	animation: rainbow 3s linear infinite, bling 2s ease-in-out infinite;
+	background-clip: text;
+	-webkit-background-clip: text;
+	position: relative;
+	overflow: hidden;
+}
+
 .level-diamond {
 	position: relative;
 	background: linear-gradient(45deg, rgba(185, 242, 255, 0.5), rgba(185, 242, 255, 0.1));
@@ -189,13 +253,35 @@
 }
 
 /* Hiệu ứng cho các thẻ khác */
+
 .level-gold {
+	position: relative;
 	background: linear-gradient(145deg, #ffd900, #fff5e6);
 	animation: shimmer 2s infinite alternate;
 	transition: background 1s ease-in-out;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	color: white;
+}
+
+.level-gold::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 5em;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.717), transparent);
+	transition: all 0,5s ease;
+}
+
+.level-gold:hover::before {
+	left: 100%;
+	transition: all 0.5s ease;
 }
 
 .level-gold:hover {
+	color: white;
 	box-shadow: 0 0 10px #ffd900, 0 0 20px rgb(234 230 230 / 70%), 0 0 30px rgb(236 234 234 / 70%) !important;
 }
 
@@ -205,6 +291,12 @@
 	animation: shimmer 2s infinite alternate;
 	transition: background 1s ease-in-out;
 }
+
+.level-silver:hover {
+	color: white;
+	box-shadow: 0 0 10px #979797, 0 0 20px rgb(234 230 230 / 70%), 0 0 30px rgb(236 234 234 / 70%) !important;
+}
+
 
 .level-copper {
 	background: linear-gradient(145deg, #764517, #976536, #ba9b7e, #ffffff) !important;
@@ -297,6 +389,7 @@
 .tooltip.bs-tooltip-right .arrow::before {
 	border-right-color: #013C4D;
 }
+
 
 /* Responsive Design */
 @media (min-width: 1200px) {
