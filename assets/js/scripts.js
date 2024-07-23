@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 
 				card.innerHTML = `
-                    <img src="${leader.image || 'assets/img/default.png'}" class="card-img-top" alt="${leader.name}">
+                    <img src="${leader.image || 'assets/img/default.png'}" class="card-img-top" alt="${leader.name}" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title">${leader.name}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">${leader.role}</h6>
