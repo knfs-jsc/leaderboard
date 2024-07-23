@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const searchInput = document.getElementById('search-input');
-	const leadershipsContainer = document.getElementById('leaderships-container');
+	const membershipsContainer = document.getElementById('memberships-container');
 	const spinner = document.getElementById('spinner');
 	const lazyBackgrounds = document.querySelectorAll('#slider[data-bg]');
 
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	async function fetchLeaders() {
+	async function fetchMembers() {
 		try {
-			const response = await fetch('assets/data/leaders.json');
+			const response = await fetch('assets/data/members.json');
 			const data = await response.json();
 			return data;
 		} catch (error) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function renderCardsByLevel(levels) {
-		leadershipsContainer.innerHTML = '';
+		membershipsContainer.innerHTML = '';
 		Object.keys(levels).forEach(level => {
 			const levelContainer = document.createElement('div');
 			levelContainer.className = 'level-container col-12';
@@ -50,24 +50,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			const cardsContainer = document.createElement('div');
 			cardsContainer.className = 'd-flex flex-wrap justify-content-center row';
-			const leaders = levels[level]["list"];
-			leaders.forEach(leader => {
+			const members = levels[level]["list"];
+			members.forEach(leader => {
 				const card = document.createElement('div');
 				switch (level) {
 					case 'Infinity':
-						card.className = 'leadership-card level-infinity';
+						card.className = 'membership-card level-infinity';
 						break;
 					case 'Diamond':
-						card.className = 'leadership-card level-diamond';
+						card.className = 'membership-card level-diamond';
 						break;
 					case 'Gold':
-						card.className = 'leadership-card level-gold';
+						card.className = 'membership-card level-gold';
 						break;
 					case 'Silver':
-						card.className = 'leadership-card level-silver';
+						card.className = 'membership-card level-silver';
 						break;
 					default:
-						card.className = 'leadership-card level-copper';
+						card.className = 'membership-card level-copper';
 						break;
 
 				}
@@ -90,16 +90,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 
 			levelContainer.appendChild(cardsContainer);
-			leadershipsContainer.appendChild(levelContainer);
+			membershipsContainer.appendChild(levelContainer);
 		});
 	}
 
-	function filterLeadersByLevel(levels, searchTerm) {
+	function filterMembersByLevel(levels, searchTerm) {
 		const filteredLevels = {};
 		Object.keys(levels).forEach(level => {
-			const filteredLeaders = levels[level]['list'].filter(leader => leader.name.toLowerCase().includes(searchTerm.toLowerCase()));
-			if (filteredLeaders.length > 0) {
-				filteredLevels[level] = { ...levels[level], list: filteredLeaders };
+			const filteredMembers = levels[level]['list'].filter(leader => leader.name.toLowerCase().includes(searchTerm.toLowerCase()));
+			if (filteredMembers.length > 0) {
+				filteredLevels[level] = { ...levels[level], list: filteredMembers };
 			}
 		});
 		return filteredLevels;
@@ -107,20 +107,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	searchInput.addEventListener('input', async function () {
 		spinner.style.display = 'block';
-		const data = await fetchLeaders();
+		const data = await fetchMembers();
 		spinner.style.display = 'none';
 		const searchTerm = searchInput.value.trim();
-		const levels = searchTerm ? filterLeadersByLevel(data, searchTerm) : data;
+		const levels = searchTerm ? filterMembersByLevel(data, searchTerm) : data;
 		console.log(levels)
 		renderCardsByLevel(levels);
 	});
 
-	async function loadAllLeaders() {
+	async function loadAllMembers() {
 		spinner.style.display = 'block';
-		const data = await fetchLeaders();
+		const data = await fetchMembers();
 		spinner.style.display = 'none';
 		renderCardsByLevel(data);
 	}
 
-	loadAllLeaders();
+	loadAllMembers();
 });

@@ -115,8 +115,8 @@
 				}
 			},
 			{
-				"image": "",
-				"name": "Hoang Nguyen",
+				"image": "assets/img/hoang_vu.png",
+				"name": "Hoang Vu",
 				"role": "Software & Platform Engineer",
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
@@ -129,7 +129,7 @@
 			{
 				"image": "",
 				"name": "Dat Pham",
-				"role": "Software & Platform Engineer",
+				"role": "Software Engineer",
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
 				"social": {

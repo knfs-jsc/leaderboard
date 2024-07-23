@@ -302,12 +302,12 @@
 	background: linear-gradient(145deg, #764517, #976536, #ba9b7e, #ffffff) !important;
 }
 
-/* Cấu hình cho leadership-card */
-.leadership-container {
+/* Cấu hình cho membership-card */
+.membership-container {
 	margin-bottom: 30px;
 }
 
-.leadership-card {
+.membership-card {
 	border: 0px solid #ddd !important;
 	border-radius: 8px;
 	overflow: hidden;
@@ -318,7 +318,7 @@
 	margin: 10px;
 }
 
-.leadership-card img {
+.membership-card img {
 	width: 100%;
 	height: 280px;
 	object-fit: cover;
@@ -393,25 +393,25 @@
 
 /* Responsive Design */
 @media (min-width: 1200px) {
-	.leadership-card {
+	.membership-card {
 		flex: 0 0 24%;
 	}
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-	.leadership-card {
+	.membership-card {
 		flex: 0 0 30%;
 	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-	.leadership-card {
+	.membership-card {
 		flex: 0 0 45%;
 	}
 }
 
 @media (max-width: 767px) {
-	.leadership-card {
+	.membership-card {
 		flex: 0 0 100%;
 	}
 
@@ -430,7 +430,7 @@
 }
 
 @media (max-width: 576px) {
-	.leadership-card {
+	.membership-card {
 		min-height: 200px;
 	}
 
