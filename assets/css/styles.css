@@ -394,25 +394,25 @@
 /* Responsive Design */
 @media (min-width: 1200px) {
 	.membership-card {
-		flex: 0 0 24%;
+		flex: 0 0 25%;
 	}
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
 	.membership-card {
-		flex: 0 0 30%;
+		flex: 0 0 25%;
 	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
 	.membership-card {
-		flex: 0 0 45%;
+		flex: 0 0 35%;
 	}
 }
 
 @media (max-width: 767px) {
 	.membership-card {
-		flex: 0 0 100%;
+		flex: 0 0 65%;
 	}
 
 	.card-body {
