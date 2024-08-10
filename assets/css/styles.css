@@ -308,13 +308,14 @@
 }
 
 .membership-card {
-	border: 0px solid #ddd !important;
+	border: 1px solid #f8f8f8 !important;
 	border-radius: 8px;
 	overflow: hidden;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	min-width: 250px;
 	min-height: 350px;
+	height:fit-content;
 	margin: 10px;
 }
 
@@ -327,7 +328,9 @@
 
 .card-body {
 	padding: 15px;
+	height: 250px;
 }
+
 
 .card-title {
 	font-size: 1.25rem;
@@ -347,7 +350,7 @@
 
 .card-links a {
 	margin-right: 10px;
-	color: #007bff;
+	color: #013C4D;
 	text-decoration: none;
 }
 
@@ -390,6 +393,10 @@
 	border-right-color: #013C4D;
 }
 
+
+footer a {
+	color: #013C4D;
+}
 
 /* Responsive Design */
 @media (min-width: 1200px) {

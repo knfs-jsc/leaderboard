@@ -1,11 +1,11 @@
 {
-	"Infinity": {
+	"C Level": {
 		"description": "Indie Hackers, which handles itself as an independent software company",
 		"list": [
 			{
 				"image": "assets/img/kent_phung.png",
 				"name": "Kent Phung",
-				"role": "Founder",
+				"role": "Founder & CEO",
 				"experience": "9 years",
 				"bio": "Research product strategy orientation, search for customers.",
 				"social": {
@@ -13,12 +13,7 @@
 					"github": "https://github.com/khapu2906",
 					"facebook": "https://www.facebook.com/d.kha.pu"
 				}
-			}
-		]
-	},
-	"Diamond": {
-		"description": "Have good professional management and operating capacity, can work in or outside the technology industry but have good insurance and good use of technology, oriented towards profitable development for the organization.",
-		"list": [
+			},
 			{
 				"image": "",
 				"name": "Mr X",
@@ -26,14 +21,19 @@
 				"experience": "6 years",
 				"bio": "Analyze, research and evaluate the market, come up with beneficial options to choose, what products to offer, and what media approaches to take.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			}
 		]
 	},
-	"Gold": {
+	"": {
+		"description": "Have good professional management and operating capacity, can work in or outside the technology industry but have good insurance and good use of technology, oriented towards profitable development for the organization.",
+		"list": [
+			
+		]
+	},
+	"Mid Level": {
 		"description": "Excellent in expertise, along with understanding of other fields.",
 		"list": [
 			{
@@ -60,7 +60,7 @@
 			}
 		]
 	},
-	"Silver": {
+	"Leader": {
 		"description": "Have good professional knowledge, improve expertise and leadership ability.",
 		"list": [
 			{
@@ -84,10 +84,21 @@
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com"
 				}
+			},
+			{
+				"image": "",
+				"name": "Tony Nguyen",
+				"role": "AI Engineer",
+				"experience": "4 years",
+				"bio": "Research and develop AI and machine learning applications. Do scientific projects",
+				"social": {
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
+				}
 			}
 		]
 	},
-	"Copper": {
+	"Member": {
 		"description": "don't have much experience, but I'm constantly learning to improve my ability to transfer subjects.",
 		"list": [
 			{
@@ -97,9 +108,8 @@
 				"experience": "2 years",
 				"bio": "Participate in developing community building applications.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			},
 			{
@@ -109,9 +119,8 @@
 				"experience": "2 years",
 				"bio": "Participate in developing community building applications.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			},
 			{
@@ -121,9 +130,30 @@
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
+				}
+			},
+			{
+				"image": "",
+				"name": "Ha Tran",
+				"role": "Software Engineer",
+				"experience": "2 year",
+				"bio": "Participate in developing community building applications.",
+				"social": {
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
+				}
+			},
+			{
+				"image": "",
+				"name": "Henry Dao",
+				"role": "Data Analyst",
+				"experience": "2 year",
+				"bio": "Analyze and visualize data from available datasets, to support effective business decision making.",
+				"social": {
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			},
 			{
@@ -133,9 +163,8 @@
 				"experience": "1 year",
 				"bio": "Participate in developing community building applications.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			},
 			{
@@ -145,9 +174,8 @@
 				"experience": "1 year",
 				"bio": "User experience design.",
 				"social": {
-					"linkedin": "",
-					"github": "",
-					"facebook": ""
+					"github": "https://github.com",
+					"facebook": "https://www.facebook.com"
 				}
 			}
 		]

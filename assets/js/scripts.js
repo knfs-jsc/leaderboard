@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			lazyBackground.style.backgroundImage = `url(${lazyBackground.dataset.bg})`;
 		});
 	}
+	
 
 	async function fetchMembers() {
 		try {
@@ -53,38 +54,42 @@ document.addEventListener('DOMContentLoaded', function () {
 			const members = levels[level]["list"];
 			members.forEach(leader => {
 				const card = document.createElement('div');
+				card.className = 'membership-card h-100';
+
 				switch (level) {
 					case 'Infinity':
-						card.className = 'membership-card level-infinity';
+						// card.className = 'membership-card level-infinity';
 						break;
 					case 'Diamond':
-						card.className = 'membership-card level-diamond';
+						// card.className = 'membership-card level-diamond';
 						break;
 					case 'Gold':
-						card.className = 'membership-card level-gold';
+						// card.className = 'membership-card level-gold';
 						break;
 					case 'Silver':
-						card.className = 'membership-card level-silver';
+						// card.className = 'membership-card level-silver';
 						break;
 					default:
-						card.className = 'membership-card level-copper';
+						// card.className = 'membership-card level-copper';
 						break;
 
 				}
 
 				card.innerHTML = `
                     <img src="${leader.image || 'assets/img/default.png'}" class="card-img-top" alt="${leader.name}" loading="lazy">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${leader.name}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">${leader.role}</h6>
+                        <p class="card-text">${leader.experience}</p>
                         <p class="card-text">${leader.bio}</p>
-                        <div class="card-links">
-                            ${leader.social.linkedin ? `<a href="${leader.social.linkedin}" target="_blank">LinkedIn</a>` : ''}
-                            ${leader.social.github ? `<a href="${leader.social.github}" target="_blank">GitHub</a>` : ''}
-                            ${leader.social.facebook ? `<a href="${leader.social.facebook}" target="_blank">Facebook</a>` : ''}
-                            ${leader.social.website ? `<a href="${leader.social.website}" target="_blank">Website</a>` : ''}
-                        </div>
-                    </div>
+					</div>
+					<div class="card-footer d-flex justify-content-start">
+						${leader.social.linkedin ? `<a href="${leader.social.linkedin}" class="text-muted" target="_blank">LinkedIn</a>` : ''}
+                        ${leader.social.github ? `<a href="${leader.social.github}" class="text-muted ml-2" target="_blank">GitHub</a>` : ''}
+                        ${leader.social.facebook ? `<a href="${leader.social.facebook}" class="text-muted ml-2" target="_blank">Facebook</a>` : ''}
+                        ${leader.social.website ? `<a href="${leader.social.website}" class="text-muted ml-2" target="_blank">Website</a>` : ''}
+					</div>
+                    
                 `;
 				cardsContainer.appendChild(card);
 			});
