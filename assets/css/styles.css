@@ -1,6 +1,15 @@
 body {
 	background-color: #f9f9f9;
 	font-family: Inter, Arial, sans-serif;
+	color: #013c4d;
+}
+
+header {
+	background-color: #ffffff;
+}
+
+i {
+	color: #013c4d;
 }
 
 #about h1 {
@@ -49,6 +58,18 @@ body {
 	font-size: 50px !important;
 	font-family: 'Monaco', monospace;
 	font-weight: bold;
+}
+
+.sub-nav {
+	padding-left: 3em;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+	height: 50px;
+	border: none;
+}
+
+.sub-nav span {
+	color: #013C4D;
 }
 
 .level-container {
