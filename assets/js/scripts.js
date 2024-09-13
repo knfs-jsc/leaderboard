@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const searchInput = document.getElementById('search-input');
+	const searchInput = document.getElementById('searchInput');
 	const membershipsContainer = document.getElementById('memberships-container');
 	const spinner = document.getElementById('spinner');
 	const lazyBackgrounds = document.querySelectorAll('#slider[data-bg]');
@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		Object.keys(levels).forEach(level => {
 			const levelContainer = document.createElement('div');
 			levelContainer.className = 'level-container col-12';
-			const levelTitle = document.createElement('h2');
-			levelTitle.className = 'level-title';
-			levelTitle.textContent = level;
-			levelTitle.setAttribute('data-bs-toggle', 'tooltip');
-			levelTitle.setAttribute('title', levels[level]['description']);
-			levelContainer.appendChild(levelTitle);
+			// const levelTitle = document.createElement('h2');
+			// levelTitle.className = 'level-title';
+			// levelTitle.textContent = level;
+			// levelTitle.setAttribute('data-bs-toggle', 'tooltip');
+			// levelTitle.setAttribute('title', levels[level]['description']);
+			// levelContainer.appendChild(levelTitle);
 
 			const cardsContainer = document.createElement('div');
 			cardsContainer.className = 'd-flex flex-wrap justify-content-center row';

@@ -15,28 +15,43 @@
 
 <body>
 	<header class="text-white py-0">
-		<a href="https://www.knfs-tech.com/" target="_blank" title="KNFs jsc" rel="nofollow,noopener">
-			<div class="container d-flex justify-content-between align-items-center">
+		<a href="https://www.knfs-tech.com/" title="KNFs jsc" rel="nofollow,noopener">
+			<div class="container d-flex justify-content-center align-items-center">
 				<img src="https://www.knfs-tech.com/assets/img/logo.png" alt="Logo" class="logo" loading="lazy" width="50">
 			</div>
 		</a>
 	</header>
 
 	<section id="about" class="text-dark">
-		<div class="container">
-			<div id="slider" data-bg="assets/img/background.jpg">
-				<div class="content">
-					<h1>KNFs Membership</h1>
-					<p class="lead">We are always confident in our own abilities. I am a stubborn Vietnamese person, a dragon and a fairy.</p>
+		<div class="w-100">
+			<div id="slider" data-bg="" class="d-flex align-items-center">
+				<div class="content container">
+					<h1>KNFs Members</h1>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<main class="container mt-4">
-		<div class="input-group mb-3" id="searchBox">
-			<input type="text" id="search-input" class="form-control" placeholder="Search leader...">
+		<div class="d-flex justify-content-center mt-4 mb-3">
+			<div class="d-flex text-align-center" style="max-width: 1000px; padding-top: 2em; padding-bottom: 2em;">
+				<p style="font-size: 18px;">
+					As a people-centric organization, we take pride in our growing team, where every member shares the same vision as the
+					organization, understands both the organization's mission and their individual roles within it. United in purpose, we
+					continuously strive to build and shape the organization, fulfill our collective mission, and grow personally along the
+					way.
+				</p>
+			</div>
 		</div>
+		<div class="w-100">
+			<div class="input-group mb-3 justify-content-center" id="searchBox">
+				<input type="text" id="searchInput" class="form-control" placeholder="Search member...">
+			</div>
+		</div>
+
+		<!-- <div class="input-group mb-3 justify-content-center" id="searchBox">
+			<input type="text" id="searchInput" class="form-control" placeholder="Search leader...">
+		</div> -->
 		<div id="spinner" class="spinner"></div>
 		<div id="memberships-container" class="d-flex flex-wrap justify-content-start row ml-4 mr-4"></div>
 	</main>

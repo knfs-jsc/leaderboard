@@ -1,3 +1,8 @@
+body {
+	background-color: #f9f9f9;
+	font-family: Inter, Noto Sans SC, sans-serif;
+}
+
 #about h1 {
 	color: #f9f9f9;
 }
@@ -12,33 +17,25 @@
 }
 
 #slider {
-	background-color: #f9f9f9;
+	background-color: #023c4b;
 	background-size: cover;
-	background-position: center center;
 	background-repeat: no-repeat;
-	height: 28em;
-	padding-top: 8em;
+	height: 16em;
 	transition: background-image 0.3s ease-in-out;
 	position: relative;
-}
-
-#slider::before {
-	background-color: #f9f9f9;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.12);
+	align-items: center;
 }
 
 #slider .content {
 	position: relative;
 	z-index: 1;
 	color: #ffffff;
-	text-align: center;
+	text-align: left;
 	padding: 20px;
+}
+
+#slider .content h1 {
+	font-size: 50px !important;
 }
 
 .level-container {
@@ -453,4 +450,19 @@ footer a {
 	.card-text {
 		font-size: 0.8rem;
 	}
+}
+
+#searchBox {
+	border: 0px solid #ced4da !important;
+	border-radius: 2em !important;
+	max-width: 600px !important;
+    margin: 0 auto !important;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+#searchBox input {
+	border: 1px solid #f9f9f9 !important;
+    height: 3rem !important;
+    border-radius: 10px !important;
 }
