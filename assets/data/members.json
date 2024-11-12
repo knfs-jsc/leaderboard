@@ -6,7 +6,7 @@
 				"image": "assets/img/kent_phung.png",
 				"name": "Kent Phung",
 				"role": "CEO & Founder",
-				"experience": "9 years",
+				"experience": "8 years",
 				"bio": "Research product strategy orientation, search for customers.",
 				"social": {
 					"linkedin": "https://www.linkedin.com/in/kent-phung-9a5400220/",
@@ -17,9 +17,9 @@
 			{
 				"image": "",
 				"name": "Mr X",
-				"role": "Marketing Manager & Co - Founder",
+				"role": "E-commerce & Co - Founder",
 				"experience": "6 years",
-				"bio": "Analyze, research and evaluate the market, come up with beneficial options to choose, what products to offer, and what media approaches to take.",
+				"bio": "Analyze and research issues in the e-commerce industry and consider the perspective of applying information technology to it",
 				"social": {
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com"
@@ -37,7 +37,7 @@
 		"description": "Excellent in expertise, along with understanding of other fields.",
 		"list": [
 			{
-				"image": "https://media.licdn.com/dms/image/C5603AQE2KTGRlUEzsw/profile-displayphoto-shrink_800_800/0/1601018123727?e=1727308800&v=beta&t=5O8nteO5tBn64H4jQUbYVpUZc2TrxBk-d_N6rJuN_hU",
+				"image": "https://media.licdn.com/dms/image/v2/C5603AQE2KTGRlUEzsw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1601018123727?e=1736985600&v=beta&t=oVVGjAfBVDdf88m6bVoJEDKH0J0hE8AzmMWzaX5S00E",
 				"name": "Cam Nguyen",
 				"role": "Technical Manager & Co - Founder",
 				"experience": "10 years",
@@ -51,7 +51,7 @@
 			{
 				"image": "assets/img/nhat_tran.png",
 				"name": "Nhat Tran",
-				"role": "User Manager & Co - Founder",
+				"role": "UX/UI Researcher & Co - Founder",
 				"experience": "5 years",
 				"bio": "Research psychological behavior and user experience.",
 				"social": {
@@ -126,9 +126,9 @@
 			{
 				"image": "assets/img/hoang_vu.png",
 				"name": "Hoang Vu",
-				"role": "Software & Platform Engineer",
+				"role": "Research Engineer",
 				"experience": "1 year",
-				"bio": "Participate in developing community building applications.",
+				"bio": "Learn about scientific research topics to apply to practice and the development environment",
 				"social": {
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com"
@@ -137,9 +137,9 @@
 			{
 				"image": "",
 				"name": "Ha Tran",
-				"role": "Software Engineer",
+				"role": "Research Engineer",
 				"experience": "2 year",
-				"bio": "Participate in developing community building applications.",
+				"bio": "Learn about scientific research topics to apply to practice and the development environment",
 				"social": {
 					"github": "https://github.com",
 					"facebook": "https://www.facebook.com"
